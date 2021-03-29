@@ -24,13 +24,4 @@ public class DepositoCombustibleTest {
 	public void testEstaLleno() {
 		assertFalse(depositoT.estaLleno());
 	}
-
-	@Test
-	public void testConsumir() {
-		depositoT.consumir(3);
-			assertEquals(2.2, depositoT.getDepositoNivel(),0);
-		depositoT.consumir(-3);
-			assertEquals(5.2, depositoT.getDepositoNivel(),0);
-	}
-
 }
